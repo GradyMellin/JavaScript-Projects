@@ -7,4 +7,4 @@ function myFirstFunc() {
     var Y = Y.fontcolor("red")
     document.write(X+Y+Z);
 }
-document.write(3+3)
+
