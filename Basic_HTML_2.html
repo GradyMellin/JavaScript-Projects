@@ -3,14 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <script src="Basic_JavaScript_2.js"></script>
+        <style>
+            
+            .droptarget {
+                    float: left; 
+                    width: 100px; 
+                    height: 100px;
+                    border-radius: 200px;
+                    margin: 15px;
+                    padding: 20px;
+                    background-color: rgb(255, 0, 0);
+                   text-align: center;
+}
+        </style>
     </head>
     <body>
         <button onclick="myfirstFunction()" id="Green_Text">
             dont click this!
         </button>
+        <br>
         <button onclick="mysecondFunction()" id="Concatenate">
-            Hi!
+            HI
         </button>
+        <br>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" style="background-color: white;">
+            <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">put me in the circle</p>
+        </div>
+          
+          <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
       
     </body>
 </html>

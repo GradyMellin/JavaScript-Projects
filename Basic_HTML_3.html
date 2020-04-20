@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="Basic_JavaScript_3.js"></script>
+    </head>
+    <body>
+        <h3>Binary Math Operators</h3>
+        <form id="bMath">
+            x: <input type="number" name="x" id="x"><br>
+            y: <input type="number" name="y" id="y"><br>
+            <br><button onclick="add(document.getElementById('x').value,document.getElementById('y').value)">Add</button>
+            <br><button onclick="subtract(document.getElementById('x').value,document.getElementById('y').value)">Subtract</button>
+            <br><button onclick="multiply(document.getElementById('x').value,document.getElementById('y').value)">Multiply</button>
+            <br><button onclick="divide(document.getElementById('x').value,document.getElementById('y').value)">Divide</button>
+            <br><button onclick="modulus(document.getElementById('x').value,document.getElementById('y').value)">Modulus</button>
+            <br><button onclick="power(document.getElementById('x').value,document.getElementById('y').value)">Power</button>
+        
+        </form>
+        <h3>Unary Math Operators</h3>
+        <form id="uMath">
+            a: <input type="number" name="a" id="a"><br>
+            <br><button onclick="negation(document.getElementById('a').value)">Negation</button>
+            <br><button onclick="increment(document.getElementById('a').value)">Increment</button>
+            <br><button onclick="decrement(document.getElementById('a').value)">Decrement</button>
+            <br><button onclick="random(document.getElementById('a').value)">Random number between 0 and a</button>
+            <br><button onclick="absolute(document.getElementById('a').value)">Absolute Value</button>
+            <br><button onclick="randint(document.getElementById('a').value)">Random intiger between 0 and a</button>
+        </form>
+    </body>
+</html>
