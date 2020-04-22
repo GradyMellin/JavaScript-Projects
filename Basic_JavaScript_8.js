@@ -39,3 +39,8 @@ function valueMethod() {
     var X = "All work no play makes Grady a sad boy!";
     document.getElementById("valueOf").innerHTML= X.valueOf(10);
 }
+function concatMethod() {
+    var X = "All work no play";
+    var Y = " makes Grady a sad boy!"
+    document.getElementById("concatinate").innerHTML= X.concat(Y);
+}
