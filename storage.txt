@@ -1,0 +1,85 @@
+if (document.getElementById("snow").innerHTML.value == "ski") {
+    document.write("skiing is cool but you should try snowboarding!");
+}
+else if (document.getElementById("snow").innerHTML == "snowboard") {
+    document.write("Nice! Snowboarding is great!");
+}
+else {
+    document.write("Lame! You should try snowboarding!")
+    
+function countDown() {
+        var seconds = document.getElementById("seconds").value;
+    
+        function tick() {
+            seconds = seconds -1;
+            timer.innerHTML = seconds;
+            setTimeout(tick,1000);
+    
+            if(seconds == -1) {
+                alert("TIME'S UP!")
+            }
+        }
+        tick();
+}
+
+<p>How many seconds would you like to set your alarm for?</p>
+<input id="seconds" value=""/>
+ <button onclick="countDown()">Click</button>
+ <p id="timer"></p>
+
+
+ <div class="mySlides fade">
+ <div class="numbertext">1 / 4</div>
+ <img src="img/img4.jpg" style="width: 100%">
+ <div class="text">Alps</div> 
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">2 / 4</div>
+ <img src="img/img3.jpg" style="width: 100%">
+ <div class="text">Alaska Range</div> 
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">3 / 4</div>
+ <img src="img/img2.jpg" style="width: 100%">
+ <div class="text">Andes</div> 
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 4</div>
+ <img src="img/img1.jpg" style="width: 100%">
+ <div class="text">Karakorum</div> 
+</div>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next and Previous control
+function plusSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image control
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for(i = 0; i < slides.length; i++) {
+        slide[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+
+style="display: block;"

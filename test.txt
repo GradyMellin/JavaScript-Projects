@@ -1,0 +1,23 @@
+if (document.getElementById("snow").innerHTML.value == "ski") {
+    document.write("skiing is cool but you should try snowboarding!");
+}
+else if (document.getElementById("snow").innerHTML == "snowboard") {
+    document.write("Nice! Snowboarding is great!");
+}
+else {
+    document.write("Lame! You should try snowboarding!")
+    
+function countDown() {
+        var seconds = document.getElementById("seconds").value;
+    
+        function tick() {
+            seconds = seconds -1;
+            timer.innerHTML = seconds;
+            setTimeout(tick,1000);
+    
+            if(seconds == -1) {
+                alert("TIME'S UP!")
+            }
+        }
+        tick();
+}
