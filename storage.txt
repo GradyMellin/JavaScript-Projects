@@ -28,16 +28,16 @@ function countDown() {
  <p id="timer"></p>
 
 
- <div class="mySlides fade">
- <div class="numbertext">1 / 4</div>
- <img src="img/img4.jpg" style="width: 100%">
- <div class="text">Alps</div> 
+<div class="mySlides fade"> 
+    <div class="numbertext">1 / 4</div>
+    <img src="img/img4.jpg" style="width: 100%">
+    <div class="text">Alps</div> 
 </div>
 
 <div class="mySlides fade">
- <div class="numbertext">2 / 4</div>
- <img src="img/img3.jpg" style="width: 100%">
- <div class="text">Alaska Range</div> 
+    <div class="numbertext">2 / 4</div>
+    <img src="img/img3.jpg" style="width: 100%">
+    <div class="text">Alaska Range</div> 
 </div>
 
 <div class="mySlides fade">
