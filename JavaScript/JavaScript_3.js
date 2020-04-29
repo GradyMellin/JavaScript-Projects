@@ -7,3 +7,8 @@ function displayType(blade) {
     alert(bladeType + " the color of lightsaber " + blade.innerHTML + " has")
     alert
 }
+
+function myFunction() {
+    var x = document.cookie;
+    document.getElementById("demo").innerHTML = "Cookies associated with this document: " + x;
+  }
